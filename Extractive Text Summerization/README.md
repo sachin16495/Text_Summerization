@@ -3,9 +3,9 @@
 
 ## Prerequisites
 These are are the following prerequise to run this project.
-1)Python 2.7
-2)Numpy
-3)NLTK
+1)Python 2.7 <br/>
+2)Numpy <br/>
+3)NLTK <br/>
 ## About
 I have implement unsupervised approach for the finding the summarise text of an input paragraph.The approach which I used to solve this problem is Text Rank model it is an Graph based ranking algorithm.A graph based ranking is done on the basis of links to one vertex to another the higher the link the higher the votes will on the basis of that we calculate the sentences which have the highest dependency in the contest. 
 ## How to run ?
