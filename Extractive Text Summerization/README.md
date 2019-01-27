@@ -2,12 +2,12 @@
 
 
 ## Prerequisites
-These are are the following prerequise to run this project.
+These are are the following prerequise to run this project.<br/>
 1)Python 2.7 <br/>
 2)Numpy <br/>
 3)NLTK <br/>
 ## About
-I have implement unsupervised approach for the finding the summarise text of an input paragraph.The approach which I used to solve this problem is Text Rank model it is an Graph based ranking algorithm.A graph based ranking is done on the basis of links to one vertex to another the higher the link the higher the votes will on the basis of that we calculate the sentences which have the highest dependency in the contest. 
+I have implement unsupervised approach for the finding the summarise text of an input text data.The approach which I used to solve this problem is Text Rank model it is an Graph based ranking algorithm.A graph based ranking is done on the basis of links to one vertex to another the higher the link the higher the votes will on the basis of that we calculate the sentences which have the highest dependency in the contest. 
 ## How to run ?
 1. Clone the repository
 2. Run the following script
@@ -16,7 +16,7 @@ I have implement unsupervised approach for the finding the summarise text of an 
 ```
 
 ## Text Rank Model
-Text Rank Model is a ranking algorithms based on graph which give a way of deciding the important context in a text. Graph based ranking algorithm used voting for deciding weight of a text. The linkage of vertex to another one,is basically generating a vote a that particular vertex.Higher the number of votes that are cast for a vertex, the higher the importance
+Text Rank Model is a ranking algorithms based on graph which give a way of deciding the important context in a text. Graph based ranking algorithm used voting for deciding weight of a text on the basis of linkage of that vertex to another one.Higher the number of votes that are cast for a vertex, the higher the importance
 of the vertex. Moreover, the importance of the vertex casting the vote determines how important the vote itself is, and this information is also taken into account by the ranking model. Hence, the score associated with a vertex is determined based on the votes that are cast for it, and the score of the vertices casting these votes.
 
 For Text summarization ,our goal is to rank entire sentence and therefore vertex is added to the graph of each sentence in the text.The content overlap is use to derive the relation of the sentences.Which find out the intersection of word in a sentence.Such a relation between two sentences can be seen as a process of “recommendation”: a sentence that addresses certain concepts in a text, gives the reader a recommendation refer to other sentences in the text that address the same concepts, and therefore a link can be drawn between any two such sentences that share common content.The overlap of two sentences can be determined simply as the number of common tokens between the lexical representations of the two sentences, or it can be run through syntactic filters, which only count words of a certain syntactic category, e.g. all open class words, nouns and verbs, 
@@ -44,9 +44,6 @@ def load_data(path):
 ```
 
 ### Text Summerization
-Once we did that an make co existing matrix which gives how many time a particular token repeat it self in n gram based on that an adjacency matrix is drawn.From that adjacency matrix we make similarity tree which find out particular token repeat itself.On completing that We apply Text rank model.
-
-
 
 ### Similarity Matrix Function
 The build_similarity_matrix function is responsible generating an similarity matrix which give the it call the sentence similarity function for each sentence. To get sentence similarity scale.

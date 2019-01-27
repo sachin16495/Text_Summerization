@@ -2,13 +2,13 @@
 
 
 ## Prerequisites
-These are are the following prerequise to run this project.
-1)Python 2.7
-2)Numpy
-3)NLTK
+These are are the following prerequise to run this project.<br/>
+1)Python 2.7<br/>
+2)Numpy<br/>
+3)NLTK<br/>
 
 ## How to run ?
-1. Clone the repository
+1. Clone the repository<br/>
 2. Store extracted text file http://nlp.stanford.edu/data/glove.6B.zip in same repository
 3. Run the data_per.py with the following script.It may take some pickle file.
 ```
